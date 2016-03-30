@@ -1,0 +1,19 @@
+{
+  "name": "scale-to-fit",
+  "version": "0.0.0",
+  "description": "jQuery plugin that scales any element to fit its wrapper element",
+  "main": "dist/scale-to-fit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/abersager/scale-to-fit.git"
+  },
+  "author": "Oliver Spindler <os@oliverspindler.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abersager/scale-to-fit/issues"
+  },
+  "homepage": "https://github.com/abersager/scale-to-fit#readme",
+}
