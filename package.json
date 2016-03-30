@@ -4,6 +4,11 @@
   "description": "jQuery plugin that scales any element to fit its wrapper element",
   "main": "dist/scale-to-fit.js",
   "scripts": {
+    "build": "coffee -o dist src/scale-to-fit.coffee",
+    "postbuild": "npm run minify && git-hide dist",
+    "preversion": "npm run build && git-unhide dist",
+    "postversion": "git-hide dist",
+    "minify": "uglifyjs dist/scale-to-fit.js -o dist/scale-to-fit.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,4 +21,9 @@
     "url": "https://github.com/abersager/scale-to-fit/issues"
   },
   "homepage": "https://github.com/abersager/scale-to-fit#readme",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "now-you-see-me": "abersager/now-you-see-me",
+    "uglify-js": "^2.6.2"
+  }
 }
