@@ -1,6 +1,6 @@
 {
   "name": "scale-to-fit",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "jQuery plugin that scales any element to fit its wrapper element",
   "main": "dist/scale-to-fit.js",
   "scripts": {
